@@ -10,5 +10,5 @@
 
 	// Initialize the editor.
 	// Callback function can be passed and executed after full instance creation.
-	$('.ckeditor').ckeditor(config);
+	$('textarea.ckeditor').ckeditor(config);
 });
