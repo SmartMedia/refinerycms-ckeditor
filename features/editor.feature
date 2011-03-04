@@ -1,6 +1,6 @@
 @refinerycms @wymeditor
 Feature: Test Wymeditor
-  In order to see if wymeditor is loaded properly
+  In order to see if ckeditor is loaded properly
   As an administrator
   I want to verify create page
   
