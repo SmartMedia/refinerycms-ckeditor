@@ -15,7 +15,6 @@ Gem::Specification.new do |s|
   s.homepage          = %q{http://refinerycms.com}
   s.rubyforge_project = %q{refinerycms}
   s.authors           = ['Smart Media Agency','Josef Šimanek']
-  s.license           = %q{MIT Beerware}
   s.require_paths     = %w(lib)
   s.executables       = %w(#{Pathname.glob(gempath.join('bin/*')).map{|d| d.relative_path_from(gempath)}.sort.join(" ")})
 

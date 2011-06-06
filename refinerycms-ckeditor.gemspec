@@ -2,15 +2,14 @@
 
 Gem::Specification.new do |s|
   s.name              = %q{refinerycms-ckeditor}
-  s.version           = %q{0.9.9.4}
+  s.version           = %q{1.0.0}
   s.summary           = %q{CKeditor engine for Refinery CMS}
   s.description       = %q{The basic CKeditor for Refinery CMS}
-  s.date              = %q{2011-03-04}
+  s.date              = %q{2011-06-06}
   s.email             = %q{retro@ballgag.cz}
   s.homepage          = %q{http://refinerycms.com}
   s.rubyforge_project = %q{refinerycms}
   s.authors           = ['Smart Media Agency','Josef Šimanek']
-  s.license           = %q{MIT Beerware}
   s.require_paths     = %w(lib)
   s.executables       = %w()
 
@@ -32,7 +31,6 @@ Gem::Specification.new do |s|
     'lib/generators',
     'lib/generators/refinerycms_ckeditor_generator.rb',
     'lib/refinerycms-ckeditor.rb',
-    'license.md',
     'public',
     'public/javascripts',
     'public/javascripts/ckeditor',
@@ -41,6 +39,7 @@ Gem::Specification.new do |s|
     'public/javascripts/ckeditor/boot_ck.js',
     'public/javascripts/ckeditor/ckeditor.js',
     'public/javascripts/ckeditor/config.js',
+    'public/javascripts/ckeditor/contents.css',
     'public/javascripts/ckeditor/images',
     'public/javascripts/ckeditor/images/spacer.gif',
     'public/javascripts/ckeditor/lang',
