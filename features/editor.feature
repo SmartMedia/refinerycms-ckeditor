@@ -1,8 +1,8 @@
-@refinerycms @wymeditor
-Feature: Test Wymeditor
+@refinerycms @ckeditor
+Feature: Test CKeditor
   In order to see if ckeditor is loaded properly
   As an administrator
-  I want to verify create page
+  I want to verify editor is loaded
   
   Background:
     Given I am a logged in refinery user
