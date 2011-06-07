@@ -7,7 +7,7 @@ module CkeditorHelper
   end
   
   def editor_assets
-    render 'editor_assets'
+    render '/admin/pages/editor_assets'
   end
   
 end
