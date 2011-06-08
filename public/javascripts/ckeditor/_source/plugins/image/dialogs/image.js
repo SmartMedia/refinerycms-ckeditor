@@ -1140,6 +1140,16 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 							hidden : true,
 							label : editor.lang.common.browseServer
 						},
+            {
+              type : 'checkbox',
+              id : 'txtLightboxChk',
+              isChanged : false,
+              style: 'float:left',
+              label : 'lightbox',
+              commit: function(type, element) {
+                element.addClass('lightbox');
+              }
+            },
 						{
 							id : 'cmbTarget',
 							type : 'select',
