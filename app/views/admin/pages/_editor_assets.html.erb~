@@ -1,3 +1,4 @@
+
 <% 
 
   content_for :javascripts, javascript_include_tag('ckeditor/ckeditor_source.js')   

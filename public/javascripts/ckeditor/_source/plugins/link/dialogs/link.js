@@ -415,15 +415,16 @@ CKEDITOR.dialog.add( 'link', function( editor )
 										id : 'protocol',
 										type : 'select',
 										label : commonLang.protocol,
-										'default' : 'http://',
+										'default' : '',
 										items :
 										[
 											// Force 'ltr' for protocol names in BIDI. (#5433)
+                      // #TODO - přeložit
+											[ 'Stránka' , '' ],
 											[ 'http://\u200E', 'http://' ],
 											[ 'https://\u200E', 'https://' ],
 											[ 'ftp://\u200E', 'ftp://' ],
-											[ 'news://\u200E', 'news://' ],
-											[ linkLang.other , '' ]
+											[ 'news://\u200E', 'news://' ]
 										],
 										setup : function( data )
 										{
