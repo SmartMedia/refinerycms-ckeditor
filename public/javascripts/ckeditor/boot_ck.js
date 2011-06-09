@@ -175,13 +175,13 @@ var link_dialog = {
     $('#submit_button').click(function(e){
       e.preventDefault();
       if((resource_selected = $('ul li.linked a')).length > 0) {
-        resourceUrl = resource_selected.attr('href');
-        relevant_href = resourceUrl;
+        resourceUrl = parseURL(resource_selected.attr('href'));
+        relevant_href = resourceUrl.pathname;
 
         // Add any alternate resource stores that need a absolute URL in the regex below
-        // if(resourceUrl.hostname.match(/s3.amazonaws.com/)) {
-        //  relevant_href = resourceUrl.protocol + '//' + resourceUrl.host + relevant_href;
-        // }
+        if(resourceUrl.hostname.match(/s3.amazonaws.com/)) {
+          relevant_href = resourceUrl.protocol + '//' + resourceUrl.host + relevant_href;
+        }
 
         if (typeof(resource_picker.callback) == "function") {
           resource_picker.callback({
@@ -190,7 +190,7 @@ var link_dialog = {
             , html: resource_selected.html()
           });
         }
-        window.opener.CKEDITOR.tools.callFunction(2, relevant_href);
+        window.opener.CKEDITOR.tools.callFunction(editor_func, relevant_href);
         window.close();
       }
     });
