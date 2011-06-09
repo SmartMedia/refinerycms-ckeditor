@@ -97,7 +97,7 @@ var image_dialog = {
     e.preventDefault();
     img_selected = $('#existing_image_area_content ul li.selected img').get(0);
     url = this.image_url; 
-    window.opener.CKEDITOR.tools.callFunction(3, url);
+    window.opener.CKEDITOR.tools.callFunction(editor_func, url);
     window.close();
     if($.isFunction(this.callback))
     {
