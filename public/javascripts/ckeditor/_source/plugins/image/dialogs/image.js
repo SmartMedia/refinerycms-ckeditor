@@ -998,16 +998,8 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 													[
 														[ editor.lang.common.notSet , ''],
 														[ editor.lang.common.alignLeft , 'left'],
-														[ editor.lang.common.alignRight , 'right']
-														// Backward compatible with v2 on setup when specified as attribute value,
-														// while these values are no more available as select options.
-														//	[ editor.lang.image.alignAbsBottom , 'absBottom'],
-														//	[ editor.lang.image.alignAbsMiddle , 'absMiddle'],
-														//  [ editor.lang.image.alignBaseline , 'baseline'],
-														//  [ editor.lang.image.alignTextTop , 'text-top'],
-														//  [ editor.lang.image.alignBottom , 'bottom'],
-														//  [ editor.lang.image.alignMiddle , 'middle'],
-														//  [ editor.lang.image.alignTop , 'top']
+														[ editor.lang.common.alignRight , 'right'],
+														[ editor.lang.common.alignMiddle , 'middle']
 													],
 													onChange : function()
 													{
@@ -1146,8 +1138,20 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
               isChanged : false,
               style: 'float:left',
               label : 'lightbox',
+              setup: function(type, element) {
+                class = (element.getAttribute('class') || '');
+                if(class.indexOf('lightbox') > -1) {
+                  this.setValue(true);
+                } else {
+                  this.setValue(false);
+                }
+              },
               commit: function(type, element) {
-                element.addClass('lightbox');
+                if(this.getValue()) {
+                  element.addClass('lightbox');
+                } else {
+                  element.removeClass('lightbox');
+                }
               }
             },
 						{
