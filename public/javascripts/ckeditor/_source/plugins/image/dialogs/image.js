@@ -1010,7 +1010,12 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 													{
 														if ( type == IMAGE )
 														{
-															var value = element.getStyle( 'float' );
+                              console.log(element.getStyle('display'));
+                              console.log(element.getAttribute('style'));
+                              if(element.getStyle('display') == 'block') 
+                                this.setValue('middle');
+															
+                                var value = element.getStyle( 'float' );
 															switch( value )
 															{
 																// Ignore those unrelated values.
@@ -1018,6 +1023,8 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 																case 'none':
 																	value = '';
 															}
+                              if(element.getAttribute('style') && element.getAttribute('style').indexOf('display: block; margin-left: auto; margin-right: auto') > -1)
+                                value = 'middle'; 
 
 															!value && ( value = ( element.getAttribute( 'align' ) || '' ).toLowerCase() );
 															this.setValue( value );
@@ -1028,10 +1035,18 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 														var value = this.getValue();
 														if ( type == IMAGE || type == PREVIEW )
 														{
-															if ( value )
+															if ( value == 'middle' ) {
+                                element.setStyle( 'display', 'block' );
+                                element.setStyle( 'margin-left', 'auto' );
+                                element.setStyle( 'margin-right', 'auto' );
+                              } else if ( value ) {
 																element.setStyle( 'float', value );
-															else
+                              } else {
 																element.removeStyle( 'float' );
+                                element.removeStyle( 'display' );
+                                element.removeStyle( 'margin-left' );
+                                element.removeStyle( 'margin-right' );
+                              }
 
 															if ( !internalCommit && type == IMAGE )
 															{
