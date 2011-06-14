@@ -7,7 +7,9 @@
 	//		['uicolor']
 	//	],i
     filebrowserImageBrowseUrl: '/refinery/images/insert?modal=true',
-    filebrowserLinkBrowseUrl: '/refinery/pages_dialogs/link_to?wymeditor=true'
+    filebrowserLinkBrowseUrl: '/refinery/pages_dialogs/link_to?wymeditor=true',
+    extraPlugins: 'stylesheetparser',
+    contentsCss: '/stylesheets/application.css'
 	};
 
 	// Initialize the editor.

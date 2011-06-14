@@ -1139,18 +1139,22 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
               style: 'float:left',
               label : 'lightbox',
               setup: function(type, element) {
-                class = (element.getAttribute('class') || '');
-                if(class.indexOf('lightbox') > -1) {
-                  this.setValue(true);
-                } else {
-                  this.setValue(false);
+                if(type==LINK) {
+                  class = (element.getAttribute('class') || '');
+                  if(class.indexOf('lightbox') > -1) {
+                    this.setValue(true);
+                  } else {
+                    this.setValue(false);
+                  }
                 }
               },
               commit: function(type, element) {
-                if(this.getValue()) {
-                  element.addClass('lightbox');
-                } else {
-                  element.removeClass('lightbox');
+                if(type == LINK) {
+                  if(this.getValue()) {
+                    element.addClass('lightbox');
+                  } else {
+                    element.removeClass('lightbox');
+                  }
                 }
               }
             },
