@@ -81,3 +81,47 @@ blockquote {
     text-shadow: #fff 1px 1px 1px;
     overflow: hidden;
 }
+
+div.service {
+  margin-top: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ebedee ;
+}
+
+div.service h2.title {
+    display: inline;
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+    font-size: 22px;
+    color: #f26531;
+    font-weight: normal;
+    clear: both;
+}
+
+div.service p.text {
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+div.service div.icon {
+  float: left;
+  margin-top: 30px;
+  margin-left: 5px;
+  margin-right: 30px;
+  width: 54px;
+  height: 34px;
+  background: url(/images/junk_icon.png) no-repeat top left;
+}
+
+div.service p.more {
+  padding-left: 10px;
+  background: url(/images/bullet.png) no-repeat 0 5px;
+  font-size: 14px;
+  float: right;
+}
+
+div.service p.more a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
