@@ -125,3 +125,62 @@ div.service p.more a {
   text-decoration: none;
   border-bottom: 1px solid;
 }
+
+.team {
+    margin-bottom: 40px;
+}
+
+.team .name {
+    font-size: 20px;
+    color: #F26531;
+}
+
+.team p.first {
+    color: blue;
+}
+.team ul li {
+    background: none;
+}
+.team ul li ul li {
+    background: url("/images/icons.png") no-repeat scroll 3px -202px transparent;
+}
+.team ul li.odd {
+    height: 310px;
+}
+.team ul li img {
+  background: none;
+  margin-left: -20px;
+}
+.team  ul li.odd img{
+    float: left;
+}
+.team  ul li.odd p{
+   margin-left: 10px;
+   padding-left: 190px;
+   text-align: justify;
+}
+.team ul li.odd ul {
+    margin-left: 200px;
+}
+.team ul li.odd span, .team ul li.odd a {
+    margin-left: 0px;
+}
+.team ul li.even span, .team ul li.even a {
+    float: left;
+    margin-left: 200px;
+}
+
+.team  ul li.even p{
+    margin-top: 20px;
+    margin-right: 210px;
+    text-align: justify;
+}
+.team ul li.even ul {
+    float: left;
+    margin-left: 200px;
+    width: 150px;
+}
+.team ul li.even img{
+  float:right;
+}
+

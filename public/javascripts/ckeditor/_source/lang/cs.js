@@ -574,7 +574,6 @@ CKEDITOR.lang['cs'] =
 		tag_p		: 'Normální',
 		tag_pre		: 'Naformátováno',
 		tag_address	: 'Adresa',
-		tag_h1		: 'Nadpis 1',
 		tag_h2		: 'Nadpis 2',
 		tag_h3		: 'Nadpis 3',
 		tag_h4		: 'Nadpis 4',

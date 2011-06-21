@@ -42,7 +42,7 @@ CKEDITOR.addTemplates( 'default',
               '<ul>' +
                 '<li class="even">' +
                   '<img src="/images/sandra.png" />' +
-                  '<span class="name">Sandra Gligić</span><br />' +
+                  '<a href="#">Sandra Gligić</a><br />' +
                   '<span class=position>General Manager</span>' +
                   '<ul>' +
                     '<li>spolehlivost</li>' +

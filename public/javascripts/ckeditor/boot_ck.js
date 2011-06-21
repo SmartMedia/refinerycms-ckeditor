@@ -99,8 +99,8 @@ var image_dialog = {
     e.preventDefault();
     img_selected = $('#existing_image_area_content ul li.selected img').get(0);
     url = this.image_url; 
-    window.opener.CKEDITOR.tools.callFunction(editor_func, url);
-    window.close();
+    //window.opener.CKEDITOR.tools.callFunction(editor_func, url);
+    //window.close();
     if($.isFunction(this.callback))
     {
       this.callback(img_selected);
@@ -313,5 +313,27 @@ var resource_picker = {
       this.initialised = true;
     }
   }
+};
+
+onOpenDialog = function(dialog) {
+  //  (dialog = $('.ui-dialog')).find('.ui-dialog-titlebar').corner('1px top');
+  //  if(!$.browser.msie){
+  //    dialog.corner('6px');
+  //  }
+  // if (dialog.height() < $(window).height()) {
+  //   if(iframed()) {
+  //     $(parent.document.body).addClass('hide-overflow');
+  //   } else {
+       $(document.body).addClass('hide-overflow');
+  //   }
+  // }
+};
+
+onCloseDialog = function(dialog) {
+  // if(iframed()) {
+  //   $(parent.document.body).removeClass('hide-overflow');
+  // } else {
+       $(document.body).removeClass('hide-overflow');
+  // }
 };
 
