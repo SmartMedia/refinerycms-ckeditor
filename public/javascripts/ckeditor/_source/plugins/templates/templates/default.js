@@ -62,7 +62,7 @@ CKEDITOR.addTemplates( 'default',
         html: '<div class="service">' +
               '<h2 class="title">Výkonová reklama</h2>' +
                '<br />' +
-               '<div class="icon"></div>' +
+               '<div class="icon"><img src="/images/junk_icon.png" /></div>' +
                '<p class="text">Webové stránky jsou dnes již nezbytnou součástí marketingového mixu každé společnosti. Firemní web představuje elektronickou obdobu kamenné prodejny či obecně vysoce efektivní marketingově-komunikační kanál.Tvorba www stránek je nejčastěji realizovaným typem webu z našeho portfolia služeb webdesignu. Spočívá v navržení, implementaci a dodání webu designovaného na základě analýzy potřeb a cílů vaší společnosti.</p>' +
                '<p class="more"><a href="">více informací</a></p>' +
                '</div>'
