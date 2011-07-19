@@ -96,4 +96,4 @@ CKEDITOR.config.templates_files =
  * @example
  * config.templates_replaceContent = false;
  */
-CKEDITOR.config.templates_replaceContent = true;
+CKEDITOR.config.templates_replaceContent = false;
