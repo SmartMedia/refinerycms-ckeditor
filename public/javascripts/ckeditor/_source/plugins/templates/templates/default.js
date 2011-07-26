@@ -17,43 +17,13 @@ CKEDITOR.addTemplates( 'default',
         title: 'Náš tým - vlevo',
         image: 'template1.gif',
         description: 'Levá šablonka pro náš tým',
-        html: '<div class="team">' +
-              '<ul>' +
-                '<li class="odd">' +
-                  '<img src="/images/sandra.png" />' +
-                  '<span class="name">Sandra Gligić</span><br />' +
-                  '<span class=position>General Manager</span>' +
-                  '<ul>' +
-                    '<li>spolehlivost</li>' +
-                    '<li>výkonnost</li>' +
-                    '<li>coaching</li>' +
-                  '</ul>' +
-                  '<p>' +
-                  'Sandra je naší spolehlivou a výkonnou manažerkou. Úspěšně koučuje celý Sunní tým už déle než dva roky. Za její manažerské schopnosti nejlépe hovoří perfektní fungování společnosti s pevným vnitřním řádem a pravidly, které však v ničem neubírají na pohodové a přátelské atmosféře, kterou Sany do celého týmu vnáší. Její optimismus, vycházející z přesvědčení o dobře odvedené práci, je všudypřítomný a dokáže motivovat a povzbudit každého zaměstnance k prvotřídnímu výkonu. I přes nával pracovních a manažerských povinností si umí najít dostatek času na své zaměstnance, kterým pomáhá udržet zdravého týmového ducha a udržovat tak vysoký sdandard jasně zářící společnosti.' +
-                  '</p>' +
-              '</li></ul></div>'
-
-      },
-      {
-        title: 'Náš tým - vpravo',
-        image: 'template1.gif',
-        description: 'Pravá šablonka pro náš tým',
-        html: '<div class="team">' +
-              '<ul>' +
-                '<li class="even">' +
-                  '<img src="/images/sandra.png" />' +
-                  '<span class="name">Sandra Gligić</span><br />' +
-                  '<span class=position>General Manager</span>' +
-                  '<ul>' +
-                    '<li>spolehlivost</li>' +
-                    '<li>výkonnost</li>' +
-                    '<li>coaching</li>' +
-                  '</ul>' +
-                  '<p>' +
-                  'Sandra je naší spolehlivou a výkonnou manažerkou. Úspěšně koučuje celý Sunní tým už déle než dva roky. Za její manažerské schopnosti nejlépe hovoří perfektní fungování společnosti s pevným vnitřním řádem a pravidly, které však v ničem neubírají na pohodové a přátelské atmosféře, kterou Sany do celého týmu vnáší. Její optimismus, vycházející z přesvědčení o dobře odvedené práci, je všudypřítomný a dokáže motivovat a povzbudit každého zaměstnance k prvotřídnímu výkonu. I přes nával pracovních a manažerských povinností si umí najít dostatek času na své zaměstnance, kterým pomáhá udržet zdravého týmového ducha a udržovat tak vysoký sdandard jasně zářící společnosti.' +
-                  '</p>' +
-                '</li></ul></div>'
-
+        html:  '<div class="team">' +
+                  '<img src="/images/sandra.png">' +
+                  '<div class="name">Sandra Gligić</div>' +
+                  '<div class="position">General Manager</div>' +
+                  '<p>Sandra je naší spolehlivou a výkonnou manažerkou. Úspěšně koučuje celý Sunní tým už déle než dva roky. Za její manažerské schopnosti nejlépe hovoří perfektní fungování společnosti s pevným vnitřním řádem a pravidly, které však v ničem neubírají na pohodové a přátelské atmosféře, kterou Sany do celého týmu vnáší. Její optimismus, vycházející z přesvědčení o dobře odvedené práci, je všudypřítomný a dokáže motivovat a povzbudit každého zaměstnance k prvotřídnímu výkonu. I přes nával pracovních a manažerských povinností si umí najít dostatek času na své zaměstnance, kterým pomáhá udržet zdravého týmového ducha a udržovat tak vysoký sdandard jasně zářící společnosti.</p>' +
+                  '<div style="clear: left;"></div>' +
+                '</div>'
       },
       {
         title: 'Služba',
