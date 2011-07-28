@@ -1155,8 +1155,8 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
               label : 'lightbox',
               setup: function(type, element) {
                 if(type==LINK) {
-                  class = (element.getAttribute('class') || '');
-                  if(class.indexOf('lightbox') > -1) {
+                  cls = (element.getAttribute('class') || '');
+                  if(cls.indexOf('lightbox') > -1) {
                     this.setValue(true);
                   } else {
                     this.setValue(false);
