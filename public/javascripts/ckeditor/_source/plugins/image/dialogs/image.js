@@ -1152,7 +1152,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
               id : 'txtLightboxChk',
               isChanged : false,
               style: 'float:left',
-              label : 'lightbox',
+              label : 'Lightbox',
               setup: function(type, element) {
                 if(type==LINK) {
                   cls = (element.getAttribute('class') || '');
@@ -1169,6 +1169,32 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
                     element.addClass('lightbox');
                   } else {
                     element.removeClass('lightbox');
+                  }
+                }
+              }
+            },
+            {
+              type : 'checkbox',
+              id : 'txtLightboxSwfChk',
+              isChanged : false,
+              style: 'float:left',
+              label : 'Open flash in lightbox',
+              setup: function(type, element) {
+                if(type==LINK) {
+                  cls = (element.getAttribute('class') || '');
+                  if(cls.indexOf('swf') > -1) {
+                    this.setValue(true);
+                  } else {
+                    this.setValue(false);
+                  }
+                }
+              },
+              commit: function(type, element) {
+                if(type == LINK) {
+                  if(this.getValue()) {
+                    element.addClass('swf');
+                  } else {
+                    element.removeClass('swf');
                   }
                 }
               }

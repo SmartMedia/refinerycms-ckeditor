@@ -104,7 +104,7 @@ var image_dialog = {
     if(window.opener === null) {
         CKEDITOR.tools.callFunction(editor_func, url);
     } else {
-      window.opener.CKEDITOR.tools.callFunction(editor_func, url);
+      window.top.opener.CKEDITOR.tools.callFunction(editor_func, url);
       window.close();
     }
 
