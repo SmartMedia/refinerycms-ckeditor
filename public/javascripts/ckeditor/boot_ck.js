@@ -8,7 +8,7 @@
 	//	],i
     filebrowserImageBrowseUrl: '/refinery/images/insert?modal=true',
     filebrowserLinkBrowseUrl: '/refinery/pages_dialogs/link_to?wymeditor=true',
-    extraPlugins: 'stylesheetparser',
+    extraPlugins: 'stylesheetparser,MediaEmbed',
     contentsCss: '/stylesheets/ckeditor/suneditor.css',
     entities: false
 	};
