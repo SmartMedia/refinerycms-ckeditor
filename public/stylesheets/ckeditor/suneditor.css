@@ -159,3 +159,60 @@ div.service p.more a {
   float: left;
   margin: 0 5px 0 0;
 }
+
+.service {
+	margin: 0px;
+	padding: 0 15px 25px 0px;
+	background: #EDEFF0;
+	border: none;
+	position: relative;
+	clear: both;
+	height: 155px;
+}
+
+div.service:hover {
+	color: #F26531;
+	background-color: #fbfbfb;
+}
+
+div.service a {
+  text-decoration: none;
+}
+
+.service p {
+	margin-left: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.service .icon {
+	width: 130px;
+	text-align: center;
+	margin: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	height: 100%;
+	text-align: center;
+	float: left;
+}
+
+.service img {
+	margin: auto;
+}
+
+.service .float-left {
+	width: 400px;
+}
+
+.page-service .service {
+  padding-bottom: 30px;
+  background: white;
+  float: left;
+  width: 47%;
+  clear: none;
+  border: 1px solid #EEE;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  overflow:hidden;
+}
+
