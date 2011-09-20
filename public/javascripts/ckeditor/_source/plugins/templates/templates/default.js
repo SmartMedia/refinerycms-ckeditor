@@ -19,11 +19,25 @@ CKEDITOR.addTemplates( 'default',
         description: 'Levá šablonka pro náš tým',
         html:  '<div class="team">' +
                   '<img src="/images/sandra.png">' +
-                  '<div class="name">Sandra Gligić</div>' +
-                  '<div class="position">General Manager</div>' +
-                  '<p>Sandra je naší spolehlivou a výkonnou manažerkou. Úspěšně koučuje celý Sunní tým už déle než dva roky. Za její manažerské schopnosti nejlépe hovoří perfektní fungování společnosti s pevným vnitřním řádem a pravidly, které však v ničem neubírají na pohodové a přátelské atmosféře, kterou Sany do celého týmu vnáší. Její optimismus, vycházející z přesvědčení o dobře odvedené práci, je všudypřítomný a dokáže motivovat a povzbudit každého zaměstnance k prvotřídnímu výkonu. I přes nával pracovních a manažerských povinností si umí najít dostatek času na své zaměstnance, kterým pomáhá udržet zdravého týmového ducha a udržovat tak vysoký sdandard jasně zářící společnosti.</p>' +
+                  '<div class="name">Jméno</div>' +
+                  '<div class="position">Pozive</div>' +
+                  '<p>Sandra je naší spolehlivou a výkonnou manažerkou. Úspěšně koučuje celý tým už déle než dva roky</p>' +
                   '<div style="clear: left;"></div>' +
                 '</div>'
+      },
+      {
+        title: 'Ukázka',
+        image: 'template1.gif',
+        description: 'Pro Filipsa',
+        html:  '<div class="service subpage">' +
+                 '<h2 class="title">' +
+                   '<a href="/link">Název</a>' +
+                 '</h2>' +
+                 '<div class="thumb">' +
+                   '<a href="/link"><img alt="" src="/images/nahledy/7.png" style="width: 278px; height: 115px;"></a>' +
+                 '</div>' +
+                 '<ul><li>1</li><li>2</li><li>3</li></ul>' +
+               '</div>'
       },
       {
         title: 'Služba',

@@ -204,7 +204,7 @@ div.service a {
 	width: 400px;
 }
 
-.page-service .service {
+.service {
   padding-bottom: 30px;
   background: white;
   float: left;
@@ -214,5 +214,14 @@ div.service a {
   margin-right: -1px;
   margin-bottom: -1px;
   overflow:hidden;
+}
+
+.service.subpage {
+  height: 210px;
+  width: 275px;
+  margin-bottom: 10px;
+}
+.service.subpage h2 {
+  height: 22px;
 }
 
